@@ -1,6 +1,8 @@
-const express = require('express');
+const express = require('express')
+const db = require('../data/config')
+const Schemes = require('./scheme-model.js')
 
-const Schemes = require('./scheme-model.js');
+const { find, findById, findSteps, add } = require('./scheme-model')
 
 const router = express.Router();
 
